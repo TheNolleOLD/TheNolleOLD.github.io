@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
+<!-- Title -->
+<title>TheNolle  |  Home Page</title>
+<!-- BASE -->
+<base href="https://thenolleold.github.io/">
+<!-- SEO -->
+<meta name="author" content="TheNolle">
+<meta name="description" content="Official TheNolle Studios's website">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="google" content="nositelinkssearchbox">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+<!-- MAIN -->
+<style>
+    body {background-color: #ffccdc}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Courier", sans-serif;}
+body, html {
+  height: 100%;
+  color: #404040;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Header) */
+.bgimg-1 {
+  background-image: url('/images/background/BackGround-Header.gif');
+  min-height: 100%;
+}
+
+/* Second image (Projects) */
+.bgimg-2 {
+  background-image: url("/images/background/BackGround-Projects.gif");
+  min-height: 400px;
+}
+
+/* Third image (Social) */
+.bgimg-3 {
+  background-image: url("/images/background/BackGround-Social.gif");
+  min-height: 400px;
+}
+
+.thenolle-wide {letter-spacing: 10px;}
+.thenolle-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="thenolle-top">
+    <div class="thenolle-bar" id="myNavbar">
+      <a class="thenolle-bar-item thenolle-button thenolle-hide-medium thenolle-hide-large thenolle-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <img src="/images/icons/bars.png" class="thenolle-top thenolle-middletop img-fluid" style="max-width:16px" alt="Menu Icon">
+      </a>
+      <a href="/index.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/house.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Home"> HOME</a>
+      <a href="/pages/about.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="vCard"> ABOUT</a>
+      <a href="/pages/projects.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/folder-open.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Opened Folder"> PROJECTS</a>
+      <a href="/pages/social.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/link.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Link"> SOCIAL</a>
+      <a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="thenolle-right thenolle-margin-right thenolle-topbar img-fluid" style="max-width:24px" alt="Discord Logo"></a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navMedium" class="thenolle-bar-block thenolle-text-Ruby thenolle-hide thenolle-hide-large thenolle-hide-medium">
+      <a href="/index.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/house.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Home"> HOME</a>
+      <a href="/pages/about.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="vCard"> ABOUT</a>
+      <a href="/pages/projects.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/folder-open.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Opened Folder"> PROJECTS</a>
+      <a href="/pages/social.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/link.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Link"> SOCIAL</a>
+      <a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="thenolle-right thenolle-margin-right thenolle-topbar img-fluid" style="max-width:24px" alt="Discord Logo"></a>
+    </div>
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 thenolle-display-container thenolle-opacity-min" id="home">
+  <div class="thenolle-display-middle" style="white-space:nowrap;">
+    <img src="/images/logos/Main-Logo.png" class="thenolle-bigbottom img-fluid" style="max-width:250px" alt="Logo">
+    <span class="caption thenolle-center thenolle-padding-24px thenolle-Black thenolle-text-Pippin thenolle-xlarge thenolle-wide thenolle-animate-opacity">TheNolle</span>
+  </div>
+</div>
+
+<!-- Container (About Me Section) -->
+<div class="thenolle-content thenolle-container thenolle-padding-64" id="about">
+  <h3 class="thenolle-center">MORE ABOUT ME</h3>
+  <p class="thenolle-center"><em>I love <a href="https://instagram.com/the.nolle" class="thenolle-text-Amethyst-Smoke" target="_blank">photography</a></em></p>
+  <p>Let me introduce myself:</p>
+    <p>Hi, I am <b>TheNolle</b>, a <b>French student</b>.</p>
+    <p>I like a lot of things on internet such as <b>developping</b>, <b>drawing</b> and <b>a lot more things</b>, that's why I'm now on <a href="https://github.com/TheNolle" class="thenolle-text-Amethyst-Smoke" target="_blank"><b>GitHub</b></a>, to share it all.</p>
+    <p>I specialize in <b>javascript</b>, <b>java</b>, a bit in <b>html</b> and in <b>css</b>.</p>
+    <p>I'm <b>still learning</b> all of that so if something doesn't work and you know why, try helping me, it would be really nice!</p>
+    <p>That's all I'm willing to say!</p>
+  <!-- About Website Section -->
+  <div class="thenolle-row">
+    <div class="thenolle-col m6 thenolle-center thenolle-padding-large">
+      <p><b><img src="/images/icons/information-point.png" class="thenolle-bottombar img-fluid" style="max-width:12px" alt="Information Point"> ABOUT THE WEBSITE</b></p><br>
+      <img src="/images/Website-Mascot-OctoNolle.png" class="thenolle-image thenolle-opacity thenolle-hover-opacity-off" style="max-width:350px" alt="My Logo">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="thenolle-col m6 thenolle-hide-small thenolle-padding-large">
+      <p>Welcome on <b>TheNolle</b>'s website, on this website you could find all the infos needed about the projects, TheNolle, and all the things related to those two categories. You can find ongoing projects, finished projects and betas here, you can also find things you can't find elsewhere, I'm sure you won't regret coming here!<br>
+        <br><br>
+        <br><br>
+        <br>
+        If you have any suggestions <i>(for the website, a project, or somethings else)</i> don't hesitate clicking on <a href="https://github.com/TheNolle/TheNolle/issues/new/choose" class="thenolle-text-Amethyst-Smoke"><b><img src="/images/icons/comment-text_white.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Comment Text"> Suggestion</b></a> and joining the <a href="https://discord.gg/yUgp7k8" class="thenolle-text-Amethyst-Smoke" target="_blank">Discord</a>!</p>
+    </div>
+  </div>
+  <p class="thenolle-large thenolle-bigtop thenolle-center thenolle-padding-16"><u><b>Im really good at:</b></u></p>
+  <p class="thenolle-wide"><img src="/images/icons/camera.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Camera"> Photography</p>
+  <div class="thenolle-light-grey">
+    <div class="thenolle-container thenolle-padding-small thenolle-Dove-Grey thenolle-center" style="width:80%">80%</div>
+  </div>
+  <p class="thenolle-wide"><img src="/images/icons/file-code.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="File with Code"> Java Script</p>
+  <div class="thenolle-light-grey">
+    <div class="thenolle-container thenolle-padding-small thenolle-Dove-Grey thenolle-center" style="width:70%">70%</div>
+  </div>
+  <p class="thenolle-wide"><img src="/images/icons/browser.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Browser"> Web development</p>
+  <div class="thenolle-light-grey">
+    <div class="thenolle-container thenolle-padding-small thenolle-Dove-Grey thenolle-center" style="width:65%">65%</div>
+  </div>
+</div>
+
+<div class="thenolle-row thenolle-center thenolle-Dove-Grey thenolle-padding-16">
+  <div class="thenolle-quarter thenolle-section">
+    <span class="thenolle-xlarge">2+</span><br>
+    Partners <img src="/images/icons/handshake_white.png" class="img-fluid" style="max-width:20px" alt="Handshake">
+  </div>
+  <div class="thenolle-quarter thenolle-section">
+    <span class="thenolle-xlarge">5+</span><br>
+    Projects Done <img src="/images/icons/tasks-completed_white.png" class="img-fluid" style="max-width:20px" alt="Task Completed">
+  </div>
+  <div class="thenolle-quarter thenolle-section">
+    <span class="thenolle-xlarge">29+</span><br>
+    Happy Users <img src="/images/icons/smile-plus_white.png" class="img-fluid" style="max-width:20px" alt="Smile Plus">
+  </div>
+  <div class="thenolle-quarter thenolle-section">
+    <span class="thenolle-xlarge">Inf+</span><br>
+    Updrades done to projects <img src="/images/icons/folder-plus_white.png" class="img-fluid" style="max-width:20px" alt="Folder Plus">
+  </div>
+</div>
+
+<!-- Second Parallax Image with Projects Text -->
+<div class="bgimg-2 thenolle-display-container thenolle-opacity-min">
+  <div class="thenolle-display-middle">
+    <span class="thenolle-xxlarge thenolle-text-white thenolle-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Projects Section) -->
+<div class="thenolle-content thenolle-container thenolle-padding-64" id="projects">
+  <h3 class="thenolle-center">LATEST PROJECTS</h3>
+  <p class="thenolle-center"><em>Here are some of my latest completed projects.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="thenolle-row-padding thenolle-center">
+    <div class="thenolle-col m3">
+      <img src="https://raw.githubusercontent.com/TheNolle/Github-Plus/master/ReadMe%20Presentation.png" style="width:100%" onclick="onClick(this)" class="thenolle-hover-opacity" alt="Github Plus">
+      <a href="https://github.com/TheNolle/Github-Plus" target="_blank"><span class="thenolle-center thenolle-padding-24px thenolle-xlarge thenolle-animate-opacity">Github <img src="/images/icons/plus.png" class="img-fluid" style="max-width:20px" alt="Plus"></span></a>
+    </div>
+
+    <div class="thenolle-col m3">
+      <img src="https://raw.githubusercontent.com/TheNolle/Deezer-Premium/master/ReadMe%20Presentation.png" style="width:100%" onclick="onClick(this)" class="thenolle-hover-opacity" alt="Deezer Premium">
+      <a href="https://github.com/TheNolle/Deezer-Premium" target="_blank"><span class="thenolle-center thenolle-padding-24px thenolle-xlarge thenolle-animate-opacity">Deezer Premium <img src="/images/icons/lock-open.png" class="img-fluid" style="max-width:20px" alt="Lock Open"></span></a>
+    </div>
+
+    <div class="thenolle-col m3">
+      <img src="https://raw.githubusercontent.com/TheNolle/Spotify-GeniusLyrics/master/ReadMe%20Presentation.png" style="width:100%" onclick="onClick(this)" class="thenolle-hover-opacity" alt="Spotify Genius Lyrics">
+      <a href="https://github.com/TheNolle/Spotify-GeniusLyrics" target="_blank"><span class="thenolle-center thenolle-padding-24px thenolle-xlarge thenolle-animate-opacity">Spotify Genius Lyrics <img src="/images/icons/comment-music.png" class="img-fluid" style="max-width:20px" alt="Comment Music"></span></a>
+    </div>
+
+    <div class="thenolle-col m3">
+      <img src="https://raw.githubusercontent.com/TheNolle/Spotify-Adblocker/master/ReadMe%20Presentation.png" style="width:100%" onclick="onClick(this)" class="thenolle-hover-opacity" alt="Spotify AdBlocker">
+      <a href="https://github.com/TheNolle/Spotify-AdBlocker" target="_blank"><span class="thenolle-center thenolle-padding-24px thenolle-xlarge thenolle-animate-opacity">Spotify AdBlocker <img src="/images/icons/ban.png" class="img-fluid" style="max-width:20px" alt="Ban"></span></a>
+    </div>
+    <form class="thenolle-center" action="/pages/projects">
+      <button type="submit" class="thenolle-button thenolle-padding-large thenolle-Seashell" style="margin-top:64px">LOAD MORE</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="thenolle-modal thenolle-Black" onclick="this.style.display='none'">
+  <span class="thenolle-button thenolle-large thenolle-Black thenolle-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="thenolle-modal-content thenolle-animate-zoom thenolle-center thenolle-transparent thenolle-padding-64">
+    <img id="img01" class="thenolle-image">
+    <p id="caption" class="thenolle-opacity thenolle-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Socials Text -->
+<div class="bgimg-3 thenolle-display-container thenolle-opacity-min">
+  <div class="thenolle-display-middle">
+     <span class="thenolle-xxlarge thenolle-text-white thenolle-wide">Socials</span>
+  </div>
+</div>
+
+<!-- Container (contact Section) -->
+<div class="thenolle-content thenolle-container thenolle-padding-64" id="contact">
+  <h3 class="thenolle-center">SEND YOUR THOUGHTS</h3>
+  <p class="thenolle-center"><em>I'd love your feedback!</em></p>
+  <p class="thenolle-center">You can also leave me a little <a href="https://ko-fi.com/thenollestudios" target="_blank"><img src="/images/icons/cup-of-coffee.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Cup of Coffee"><b class="thenolle-text-Amethyst-Smoke"><u class="thenolle-text-Amethyst-Smoke"> Coffee</u></b></a>, or leave me a note:</p>
+  <div class="thenolle-right thenolle-col m8 thenolle-panel">
+      <form class="thenolle-Black thenolle-right thenolle-section" action="https://github.com/TheNolle/TheNolle/issues/new/choose" target="_blank">
+        <button type="submit" class="thenolle-right thenolle-button thenolle-Black thenolle-button-hover"><img src="https://raw.githubusercontent.com/TheNolle/TheNolle.github.io/master/images/icons/comment-text_white.png" class="img-fluid" style="max-width:20px" alt="Comment Text"> SEND FEEDBACK</a></button>
+      </form>
+  </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="thenolle-site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <h6 class="thenolle-margin-left">Quick Links</h6>
+            <ul class="thenolle-footer-links">
+              <li class="thenolle-margin-left"><a href="/pages/about.html">About <img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="vCard"></a></li>
+              <li class="thenolle-margin-left"><a href="https://discord.gg/yUgp7k8" target="_blank">Discord <img src="/images/logos/Discord-Logo.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Discord Logo"></a></li>
+              <li class="thenolle-margin-left"><a href="https://github.com/TheNolle" target="_blank">Github <img src="/images/logos/Github-Logo.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Github Logo"></a></li>
+              <li class="thenolle-margin-left"><a href="/pages/other/privacy_policy.html" target="_blank">Privacy Policy <img src="/images/icons/secret-agent.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Secret Agent"></a></li>
+              <li class="thenolle-margin-left"><a href="/pages/other/license.html" target="_blank">License <img src="/images/icons/file-text-open-envelope.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Opened enveloped with a written file inside"></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="thenolle-margin-left thenolle-copyright-text">Copyright © 2020 All Rights Reserved by <a href="https://github.com/TheNolle" target="_blank">TheNolle</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="thenolle-social-icons">
+              <li><a href="https://instagram.com/the.nolle" target="_blank"><img src="/images/logos/Instagram-Logo.png" class="img-fluid" style="max-width:24px" alt="Instagram Logo"></a></li>
+              <li><a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="img-fluid" style="max-width:24px" alt="Discord Logo"></a></li>
+              <li class="thenolle-margin-right"><a href="https://github.com/TheNolle" target="_blank"><img src="/images/logos/Github-Logo.png" class="img-fluid" style="max-width:24px" alt="Github Logo"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "thenolle-bar" + " thenolle-card" + " thenolle-animate-top" + " thenolle-white";
+    } else {
+        navbar.className = navbar.className.replace(" thenolle-card thenolle-animate-top thenolle-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navMedium");
+    if (x.className.indexOf("thenolle-show") == -1) {
+        x.className += " thenolle-show";
+    } else {
+        x.className = x.className.replace(" thenolle-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
