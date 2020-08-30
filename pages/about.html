@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
+<!-- Title -->
+<title>TheNolle  |  About</title>
+<!-- BASE -->
+<base href="https://thenolleold.github.io/">
+<!-- SEO -->
+<meta name="author" content="TheNolle">
+<meta name="description" content="Official TheNolle Studios's website">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="google" content="nositelinkssearchbox">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier">
+<!-- MAIN -->
+<style>
+    body {background-color: #ffccdc}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Courier", sans-serif;}
+body, html {
+  height: 100%;
+  color: #404040;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Header) */
+.bgimg-1 {
+  background-image: url('/images/background/BackGround-Header.gif');
+  min-height: 100%;
+}
+
+/* Second image (Projects) */
+.bgimg-2 {
+  background-image: url("/images/background/BackGround-Projects.gif");
+  min-height: 400px;
+}
+
+/* Third image (Social) */
+.bgimg-3 {
+  background-image: url("/images/background/BackGround-Social.gif");
+  min-height: 400px;
+}
+
+.thenolle-wide {letter-spacing: 10px;}
+.thenolle-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="thenolle-top">
+      <div class="thenolle-bar" id="myNavbar">
+        <a class="thenolle-bar-item thenolle-button thenolle-hide-medium thenolle-hide-large thenolle-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <img src="/images/icons/bars.png" class="thenolle-top thenolle-middletop img-fluid" style="max-width:16px" alt="Menu Icon">
+        </a>
+        <a href="/index.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/house.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Home"> HOME</a>
+        <a href="/pages/about.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="vCard"> ABOUT</a>
+        <a href="/pages/projects.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/folder-open.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Opened Folder"> PROJECTS</a>
+        <a href="/pages/social.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button thenolle-hide-small thenolle-left thenolle-hover-Pippin"><img src="/images/icons/link.png" class="thenolle-bottombar img-fluid" style="max-width:20px" alt="Link"> SOCIAL</a>
+        <a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="thenolle-right thenolle-margin-right thenolle-topbar img-fluid" style="max-width:24px" alt="Discord Logo"></a>
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navMedium" class="thenolle-bar-block thenolle-text-Ruby thenolle-hide thenolle-hide-large thenolle-hide-medium">
+        <a href="/index.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/house.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Home"> HOME</a>
+        <a href="/pages/about.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="vCard"> ABOUT</a>
+        <a href="/pages/projects.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/folder-open.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Opened Folder"> PROJECTS</a>
+        <a href="/pages/social.html" class="thenolle-bar-item thenolle-text-Ruby thenolle-button" onclick="toggleFunction()"><img src="/images/icons/link.png" class="thenolle-bottombar img-fluid" style="max-width:18px" alt="Link"> SOCIAL</a>
+        <a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="thenolle-right thenolle-margin-right thenolle-topbar img-fluid" style="max-width:24px" alt="Discord Logo"></a>
+      </div>
+    </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 thenolle-display-container thenolle-opacity-min" id="header">
+  <div class="thenolle-display-middle" style="white-space:nowrap;">
+    <img src="/images/logos/Main-Logo.png" class="thenolle-bigbottom img-fluid" style="max-width:250px" alt="Logo">
+<!-- Title -->
+    <span class="caption thenolle-center thenolle-padding-24px thenolle-black thenolle-text-Pippin thenolle-xlarge thenolle-wide thenolle-animate-opacity">TheNolle</span>
+<!-- Subtitle -->
+    <span class="caption thenolle-center thenolle-padding-24px thenolle-black thenolle-text-Pippin thenolle-xlarge thenolle-wide thenolle-animate-opacity">About Section</span>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="thenolle-content" style="max-width:1100px">
+
+  <!-- About Me Section -->
+  <div class="thenolle-row thenolle-padding-64" id="aboutme">
+    <div class="thenolle-col m6 thenolle-padding-large thenolle-hide-small">
+     <img src="https://i.pinimg.com/474x/06/07/de/0607de072b87a1cc683d3aa766a40c46.jpg" class="thenolle-round thenolle-image thenolle-opacity-min" alt="TEMP" width="600" height="750">
+    </div>
+    <div class="thenolle-col m6 thenolle-padding-large">
+      <h1 class="thenolle-center">About Me</h1><br>
+      <h5 class="thenolle-center">Some more informations about me</h5>
+      <p class="thenolle-large">Oh, so you want to know more about me and the website? well, how should I start?
+    I know, you would maybe like to know that I have many hobbies like Coding, playing Video Games (my favorite? Minecraft!), Cooking (I plan on being a chief later on!), Listening to music.
+    But I also like Chilling, Experimenting new stuff, writing a reading a good book.
+Well, that's a lot of things yes, but they are quite connected between them OwO.
+    I do Love things also, I absolutely love cats! , Cute things, Pink color Variants, simply Hanging out with friends and learning English!
+    You must know that I am absolutely in love with one music style, I LOVE classical music, I particularly Chopin - Nocturne opera 9 N°2. Why? Because I find this song so relaxing, inspiring and It always cheers me up.
+    You should also know that I started developing on 14th January 2020, it was the first day of the pandemic "Covid-19" in France, certain of my professors decided to stop doing coming and, at this time I was in a boarding school so I was in a room at school, I so spent a lot of time doing "nothing", I worked for school, but I also learned CSS, HTML, JAVASCRIPT, JAVA, [...] because I already was interested in knowing how it was working. But it's on 26th April 2020 that I really started looking forward to it, wanting to create scripts, to try creating my first website from my own knowledge and trying to improve it every time I learn something new.
+    Well, I think you know a lot of things about me now, but why not finishing on a "fun" fact?
+This fact happened 4/5 years ago, <span class="thenolle-tag thenolle-darker-brown thenolle-text-Pippin thenolle-animate-opacity thenolle-opacity-min thenolle-hover-opacity-off">when I was a teen I had a crush on a vegetarian, to get this person's attention I became myself a vegetarian for a year, at the end, this person ended up going out with someone else.</span></p>
+    </div>
+  </div>
+
+  <!-- Separator -->
+  <hr>
+
+  <!-- About Website Section -->
+  <div class="thenolle-row thenolle-padding-64" id="aboutwebsite">
+    <div class="thenolle-col m6 thenolle-padding-large">
+      <h1 class="thenolle-center">About Website</h1><br>
+      <h5 class="thenolle-center">Some more useful informations</h5>
+      <p>At first, I made this website because when my friends found out about <a href="https://github.com/TheNolle" target="_blank">my Github</a> they were lost trying to find the exact thing they needed, so I made a small web-page they could download that would repertory every projects I made with every links, wikis, images they needed. One of my friend told me that I should make a website instead because it would be easier for me to send a link than a page, but also because if someone new wants to see my work, they don't have to ask me for the file. I then started working on a first main page on the 17th July 2020 a whole night and came up with a bad design, why? Because I knew all I needed about html, but knew nothing about CSS. I directly downloaded a Html & CSS book named "<a href="http://wtf.tw/ref/duckett.pdf" target="_blank"><b><u>HTML&CSS design and build websites by Duckett</u></b></a>" which I had pleasure to read during 2 whole weeks, at the end I knew the few I had to know to start coding a working website in html and CSS. And <i>voila</i>, after 6 days of hard work the first page of the website was done, it was published on the 19th August 2020. I had my inspirations from two friends of mine who helped me a lot on debugging my code and optimizing it. And now here it is, <b>TheNolle</b>'s website!</p>
+    </div>
+    <div class="thenolle-col m6 thenolle-padding-large thenolle-hide-small">
+      <img src="https://i.pinimg.com/474x/06/07/de/0607de072b87a1cc683d3aa766a40c46.jpg" class="thenolle-round thenolle-image thenolle-opacity-min" alt="TEMP" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="thenolle-site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <h6 class="thenolle-margin-left">Quick Links</h6>
+            <ul class="thenolle-footer-links">
+              <li class="thenolle-margin-left"><a href="/pages/about.html">About <img src="/images/icons/vcard.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="vCard"></a></li>
+              <li class="thenolle-margin-left"><a href="https://discord.gg/yUgp7k8" target="_blank">Discord <img src="/images/logos/Discord-Logo.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Discord Logo"></a></li>
+              <li class="thenolle-margin-left"><a href="https://github.com/TheNolle" target="_blank">Github <img src="/images/logos/Github-Logo.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Github Logo"></a></li>
+              <li class="thenolle-margin-left"><a href="/pages/other/privacy_policy.html" target="_blank">Privacy Policy <img src="/images/icons/secret-agent.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Secret Agent"></a></li>
+              <li class="thenolle-margin-left"><a href="/pages/other/license.html" target="_blank">License <img src="/images/icons/file-text-open-envelope.png" class="thenolle-bottombar img-fluid" style="max-width:16px" alt="Opened enveloped with a written file inside"></a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="thenolle-margin-left thenolle-copyright-text">Copyright © 2020 All Rights Reserved by <a href="https://github.com/TheNolle" target="_blank">TheNolle</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="thenolle-social-icons">
+              <li><a href="https://instagram.com/the.nolle" target="_blank"><img src="/images/logos/Instagram-Logo.png" class="img-fluid" style="max-width:24px" alt="Instagram Logo"></a></li>
+              <li><a href="https://discord.gg/yUgp7k8" target="_blank"><img src="/images/logos/Discord-Logo.png" class="img-fluid" style="max-width:24px" alt="Discord Logo"></a></li>
+              <li class="thenolle-margin-right"><a href="https://github.com/TheNolle" target="_blank"><img src="/images/logos/Github-Logo.png" class="img-fluid" style="max-width:24px" alt="Github Logo"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "thenolle-bar" + " thenolle-card" + " thenolle-animate-top" + " thenolle-white";
+    } else {
+        navbar.className = navbar.className.replace(" thenolle-card thenolle-animate-top thenolle-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navMedium");
+    if (x.className.indexOf("thenolle-show") == -1) {
+        x.className += " thenolle-show";
+    } else {
+        x.className = x.className.replace(" thenolle-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
